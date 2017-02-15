@@ -2,7 +2,7 @@
 permalink:           pretty
 
 # Setup
-title:               Blog
+title:               Wyko's Dev Log
 tagline:             Wyko Rijnsburger
 url:                 http://www.wykorijnsburger.nl
 paginate:            1
@@ -20,6 +20,10 @@ author:
   name:              Wyko Rijnsburger
   url:               https://www.wykorijnsburger.nl
   email:             utwyko@gmail.com
+
+pages_list:
+  About: '/about'
+  Feed: '/atom.xml'
 
 # Custom vars
 version:             2.0.0

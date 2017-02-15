@@ -3,28 +3,16 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+Hi! 
 
-In the novel, *The Strange Case of Dr. Jekyll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+I'm Wyko Rijnsburger, a 24-year-old software engineer currently working at [bol.com][bol.com].
 
-There are currently two themes built on Poole:
+I've graduated from the University of Amsterdam with a MSc in Information Sciences (Human Centered Multimedia track). 
+  
+I also had the chance to spend the spring doing an internship in Silicon Valley at the wonderful [FX Palo Alto lab][fxpal].
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+At the moment, I'm mostly interested in things such as the the JVM, Android, Kotlin and Reactive Programming.
 
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+[bol.com]: https://www.bol.com
+[fxpal]: https://www.fxpal.com

@@ -7,7 +7,7 @@ tagline:             Wyko Rijnsburger
 url:                 http://www.wykorijnsburger.nl
 paginate:            1
 baseurl:             ""
-
+analytics_id:        UA-92037356-1
 # Assets
 #
 # We specify the directory for Jekyll so we can use @imports.
@@ -25,6 +25,7 @@ author:
 version:             2.0.0
 github:
   repo:              https://github.com/poole/poole
+
 
 # Gems
 gems:

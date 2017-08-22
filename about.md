@@ -12,7 +12,7 @@ I've graduated from the University of Amsterdam with a MSc in Information Scienc
 I also had the chance to spend the spring doing an internship in Silicon Valley at the wonderful [FX Palo Alto lab][fxpal].
 
 
-At the moment, I'm mostly interested in things such as the the JVM, Android, Kotlin and Reactive Programming.
+At the moment, I'm mostly interested in things such as the JVM, Android, Kotlin and Reactive Programming.
 
 [bol.com]: https://www.bol.com
 [fxpal]: https://www.fxpal.com

@@ -8,7 +8,7 @@ tags: [reactive, reactor, kotlin]
 
 I spend a day migrating a service that does a lot of aggregation from [RxJava 1][rxjava] to [Reactor 3][reactor]. The migration went pretty smooth, with the Reactor API being more elegant compared to RxJava in most cases. 
 
-However, I struggled migrating the large `zip()` operations, where we merge async data from various sources into one big Observable. RxJava has `zip` that work like this:
+However, I struggled migrating the large `zip()` operations, where we merge async data from various sources into one big Observable. RxJava has `zip` that works like this:
 
 {% highlight java %}
 public static <T1,T2,T3,T4,T5,R> Single<R> zip(Single<? extends T1> o1,
@@ -19,7 +19,7 @@ public static <T1,T2,T3,T4,T5,R> Single<R> zip(Single<? extends T1> o1,
                                    Func5<? super T1,? super T2,? super T3,? super T4,? super T5,? extends R> zipFunction)
 {% endhighlight %}
 
-While I think from a maintenance perspective, this if far from ideal, as a user, the resulting code becomes quite readable:
+While I think from a maintenance perspective, this is far from ideal, as a user, the resulting code becomes quite readable:
 
 {% highlight java %}
 Single.zip(singleA, singleB, singleC, singleD, singleE, 

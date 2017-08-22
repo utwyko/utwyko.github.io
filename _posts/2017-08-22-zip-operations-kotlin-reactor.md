@@ -41,7 +41,7 @@ Mono.zip(array -> {
 {% endhighlight %}
 
 
-There is also the `when` approach, which returns a `Tuple` that you can then transform. This approach is slighly more maintainable as it doesn't require manual casting, but is not that readable:
+There is also the `when` approach, which returns a `Tuple` that you can then transform. This approach is slightly more maintainable as it does not require manual casting, but is not that readable:
 
 {% highlight java %}
 Mono.when(monoA, monoB, monoC, monoD, monoE)

@@ -6,7 +6,7 @@ categories: Dev
 tags: [reactive, reactor, kotlin]
 ---
 
-I spend a day migrating a service that does a lot of aggregation from [RxJava 1][rxjava] to [Reactor 3][reactor]. The migration went pretty smooth, with the Reactor API being more elegant compared to RxJava in most cases. 
+I spent a day migrating a service that does a lot of aggregation from [RxJava 1][rxjava] to [Reactor 3][reactor]. The migration went pretty smooth, with the Reactor API being more elegant compared to RxJava in most cases. 
 
 However, I struggled migrating the large `zip()` operations, where we merge async data from various sources into one big Observable. RxJava has `zip` that works like this:
 

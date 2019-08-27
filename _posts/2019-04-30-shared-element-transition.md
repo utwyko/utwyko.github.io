@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Lessons Leaned from implementing a Fragment to Fragment Shared Element transition"
+title:  "Lessons Learned from implementing a Fragment to Fragment Shared Element transition"
 date:   2019-04-30
 categories: Dev
 tags: [reactive, reactor, kotlin]

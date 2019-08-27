@@ -28,7 +28,7 @@ pages_list:
 # Custom vars
 version:             2.0.0
 github:
-  repo:              https://github.com/poole/poole
+  repo:              https://github.com/utwyko/utwyko.github.io
 
 
 # Gems

@@ -4,7 +4,7 @@ permalink:           pretty
 # Setup
 title:               Wyko's Dev Log
 tagline:             Wyko Rijnsburger
-url:                 http://www.wykorijnsburger.nl
+url:                 https://www.wykorijnsburger.nl
 paginate:            3
 baseurl:             ""
 analytics_id:        UA-92037356-1

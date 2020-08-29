@@ -5,7 +5,7 @@ title: About
 
 Hi!
 
-I'm Wyko Rijnsburger, a 26-year-old software engineer currently working at [Blendle][blendle].
+I'm Wyko Rijnsburger, a 27-year-old software engineer currently working at [Blendle][blendle].
 
 I've graduated from the University of Amsterdam with a MSc in Information Sciences (Human Centered Multimedia track).
 

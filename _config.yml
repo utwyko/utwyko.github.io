@@ -2,8 +2,7 @@
 permalink:           pretty
 
 # Setup
-title:               Wyko's Dev Log
-tagline:             Wyko Rijnsburger
+title:               Wyko Rijnsburger
 url:                 https://www.wykorijnsburger.nl
 paginate:            5
 baseurl:             ""
@@ -26,7 +25,7 @@ pages_list:
   Feed: '/atom.xml'
 
 # Custom vars
-version:             2.0.0
+version:             3.0.0
 github:
   repo:              https://github.com/utwyko/utwyko.github.io
 

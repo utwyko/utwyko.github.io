@@ -17,7 +17,7 @@ We evaluated several approaches. I recommend checking out [this talk by Ben Ashe
 
 We created a separate repo with its own CI pipeline. This isolated all Multiplatform code, apart from the integration into the clients, into a removable component. 
 
-The first feature we build in Multiplatform was email verification: when a use signs-up with a suspicious email-address (e.g. `user@gnail.com`) we suggest a corrected email address before the user confirms their registration. A simplified version of this already worked: we fetched a verification regex from the backend, but we were not satisfied with that implementation. Email verification was a perfect use-case for Multiplatform because:
+The first feature we build in Multiplatform was email verification: when a user signs-up with a suspicious email address (e.g. `user@gnail.com`) we suggest a corrected email address before the user confirms their registration. A simplified version of this already worked: we fetched a verification regex from the backend, but we were not satisfied with that implementation. Email verification was a perfect use-case for Multiplatform because:
 * The logic should be identical for each client.
 * The email address should be verified after each key stroke. Doing the verification server-side requires a lot of traffic and adds latency.
 * It is easily testable in isolation.

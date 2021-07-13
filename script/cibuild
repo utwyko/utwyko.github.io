@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -e # halt script on error
+
+bundle exec jekyll build
+# TODO: Add this exception to markdown
+bundle exec htmlproofer --url-ignore "https://developer.android.com/reference/android/support/v4/app/FragmentTransaction.html#setreorderingallowed" ./_site

@@ -1,0 +1,30 @@
+name: Test Jekyll site
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+jobs:
+  github-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@477b21f02be01bcb8030d50f37cfec92bfa615b6
+        with:
+          ruby-version: 2.7
+          bundler-cache: true
+      - name: Install dependencies
+        run: bundle install
+      - name: Cache HTMLProofer
+        id: cache-htmlproofer
+        uses: actions/cache@v2
+        with:
+          path: tmp/.htmlproofer
+          key: ${{ runner.os }}-htmlproofer
+      - name: Build site
+        run: bundle exec jekyll build
+      - name: HTML proof
+        # TODO: Add this exception to markdown
+        run: bundle exec htmlproofer --url-ignore "https://developer.android.com/reference/android/support/v4/app/FragmentTransaction.html#setreorderingallowed" ./_site

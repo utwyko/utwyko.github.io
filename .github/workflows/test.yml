@@ -1,10 +1,7 @@
 name: Test Jekyll site
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: [push, pull_request]
+
 jobs:
   github-pages:
     runs-on: ubuntu-latest

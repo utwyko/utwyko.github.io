@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Set up Ruby
-        uses: ruby/setup-ruby@168d6a54b412713c0ed60998a78093a270ca8d84
+        uses: ruby/setup-ruby@8f312efe1262fb463d906e9bf040319394c18d3e
         with:
           ruby-version: 2.7
           bundler-cache: true

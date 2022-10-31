@@ -10,7 +10,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@ece82769428359c077b5a5eaff268902a303c101
         with:
-          ruby-version: 2.7
+          ruby-version: 3.1
           bundler-cache: true
       - name: Install dependencies
         run: bundle install

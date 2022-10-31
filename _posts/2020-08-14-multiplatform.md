@@ -40,4 +40,4 @@ Apart from Web, we were quite happy with the resulting setup. Using the Multipla
 [fat_framework]: https://medium.com/@saschpe/kotlin-multiplatform-fat-framework-for-ios-cdd05ec479cb
 [actions_packages]: https://docs.github.com/en/packages/learn-github-packages/publishing-a-package
 [kotlin_14m1]: https://blog.jetbrains.com/kotlin/2020/03/kotlin-1-4-m1-released/
-[sealed_class]: https://kotlinlang.org/docs/reference/sealed-classes.html
+[sealed_class]: https://kotlinlang.org/docs/sealed-classes.html

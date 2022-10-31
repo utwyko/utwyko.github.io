@@ -19,8 +19,7 @@ Flux.just("ID1", "ID2")
 {% endhighlight %}
 
 #### Update 12th April 2017 ####
-This post has been updated to use the new [delayElements][delay-elements] method instead of the now deprecated [delayMillis][delay-millis-ref]. 
+This post has been updated to use the new [delayElements][delay-elements] method instead of the now deprecated `delayMillis`.
 
 [reactor]: https://projectreactor.io/
-[delay-millis-ref]: https://projectreactor.io/docs/core/release/api/reactor/core/publisher/Flux.html#delayMillis-long-
 [delay-elements]: https://projectreactor.io/docs/core/release/api/reactor/core/publisher/Flux.html#delayElements-java.time.Duration-

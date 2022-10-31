@@ -24,4 +24,4 @@ jobs:
         run: bundle exec jekyll build
       - name: HTML proof
         # TODO: Add this exception to markdown
-        run: bundle exec htmlproofer --url-ignore "https://developer.android.com/reference/android/support/v4/app/FragmentTransaction.html#setreorderingallowed" --ignore-status-codes "307,403"  ./_site
+        run: bundle exec htmlproofer --ignore-urls "https://developer.android.com/reference/android/support/v4/app/FragmentTransaction.html#setreorderingallowed" --ignore-status-codes "307,403"  ./_site

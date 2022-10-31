@@ -64,5 +64,5 @@ Mono.when(monoA, monoB, monoC, monoD, monoE)
 [reactor]: https://projectreactor.io/
 [rxjava]: https://github.com/ReactiveX/RxJava
 [kotlin]: https://kotlinlang.org/
-[extensions]: https://kotlinlang.org/docs/reference/extensions.html
-[destructuring]: https://kotlinlang.org/docs/reference/multi-declarations.html
+[extensions]: https://kotlinlang.org/docs/extensions.html
+[destructuring]: https://kotlinlang.org/docs/destructuring-declarations.html

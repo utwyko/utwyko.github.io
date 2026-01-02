@@ -7,13 +7,6 @@ url:                 https://www.wykorijnsburger.nl
 paginate:            5
 baseurl:             ""
 analytics_id:        UA-92037356-1
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
-sass:
-  sass_dir:          _sass
-  style:            :compressed
-
 # About/contact
 author:
   name:              Wyko Rijnsburger

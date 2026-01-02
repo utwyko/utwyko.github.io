@@ -36,7 +36,7 @@ Some of my 2025 favorites. Music has to be released in 2025, the rest are just m
 
 1. Lonely People with Power - Deafheaven
 2. Dali Ain't Dead - Zelooperz
-3. MIKE - Showbiz
+3. Showbiz! - MIKE
 4. Mercy - Armand Hammer
 5. Let God Sort Em Out - Clipse
 

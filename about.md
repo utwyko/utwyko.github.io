@@ -5,7 +5,7 @@ title: About
 
 Hi!
 
-I'm Wyko Rijnsburger, a 28-year-old software engineer currently working at [Disney Streaming][ds].
+I'm Wyko Rijnsburger, a 33-year-old tech lead for Disney+ Android at [Disney Streaming][ds].
 
 I've graduated from the University of Amsterdam with a MSc in Information Sciences (Human Centered Multimedia track).
 

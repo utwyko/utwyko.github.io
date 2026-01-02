@@ -1,6 +1,17 @@
 name: Test Jekyll site
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  HTMLPROOFER_IGNORE_URLS: "https://developer.android.com/reference/android/support/v4/app/FragmentTransaction.html#setreorderingallowed"
+  HTMLPROOFER_IGNORE_STATUS: "307,403"
 
 jobs:
   github-pages:
@@ -11,16 +22,15 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-      - name: Install dependencies
-        run: bundle install
       - name: Cache HTMLProofer
         id: cache-htmlproofer
         uses: actions/cache@v5
         with:
           path: tmp/.htmlproofer
-          key: ${{ runner.os }}-htmlproofer
+          key: ${{ runner.os }}-htmlproofer-${{ hashFiles('Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-htmlproofer-
       - name: Build site
         run: bundle exec jekyll build
       - name: HTML proof
-        # TODO: Add this exception to markdown
-        run: bundle exec htmlproofer --ignore-urls "https://developer.android.com/reference/android/support/v4/app/FragmentTransaction.html#setreorderingallowed" --ignore-status-codes "307,403"  ./_site
+        run: bundle exec htmlproofer --ignore-urls "${{ env.HTMLPROOFER_IGNORE_URLS }}" --ignore-status-codes "${{ env.HTMLPROOFER_IGNORE_STATUS }}" ./_site

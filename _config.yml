@@ -15,6 +15,7 @@ author:
 
 pages_list:
   About: '/about'
+  Personal: '/personal'
   Feed: '/atom.xml'
 
 # Custom vars

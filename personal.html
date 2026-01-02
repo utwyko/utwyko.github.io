@@ -1,0 +1,25 @@
+---
+layout: default
+title: Personal
+---
+
+<div class="posts">
+  {% assign personal_posts = site.categories.Personal %}
+  {% if personal_posts.size > 0 %}
+    {% for post in personal_posts %}
+    <article class="post">
+      <h1 class="post-title">
+        <a href="{{ post.url | relative_url }}">
+          {{ post.title }}
+        </a>
+      </h1>
+
+      <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+
+      {{ post.content }}
+    </article>
+    {% endfor %}
+  {% else %}
+    <p>No personal blog posts yet. Check back soon!</p>
+  {% endif %}
+</div>

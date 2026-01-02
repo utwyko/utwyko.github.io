@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  HTMLPROOFER_IGNORE_URLS: "https://developer.android.com/reference/android/support/v4/app/FragmentTransaction.html#setreorderingallowed"
+  HTMLPROOFER_IGNORE_URLS: "https://developer.android.com/reference/android/support/v4/app/FragmentTransaction.html#setreorderingallowed,/^https://www.wykorijnsburger.nl/.*/"
   HTMLPROOFER_IGNORE_STATUS: "307,403"
 
 jobs:
@@ -31,6 +31,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-htmlproofer-
       - name: Build site
-        run: bundle exec jekyll build
+        run: JEKYLL_ENV=production bundle exec jekyll build
       - name: HTML proof
         run: bundle exec htmlproofer --ignore-urls "${{ env.HTMLPROOFER_IGNORE_URLS }}" --ignore-status-codes "${{ env.HTMLPROOFER_IGNORE_STATUS }}" ./_site
